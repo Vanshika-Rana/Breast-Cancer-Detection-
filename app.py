@@ -23,6 +23,7 @@ def cancer_pred():
 
 model = pickle.load(open('Breast_Cancer_Prediction_Model.sav', 'rb'))
 df = pd.read_csv('Breast_cancer_data.csv')
+st.set_page_config(page_title='Breast Cancer Detection', page_icon="./icon.png")
 st.title('Breast Cancer Detection')
 st.subheader('Model detects whether a cancer is Malignant or Benign')
 st.image('./img.png')
